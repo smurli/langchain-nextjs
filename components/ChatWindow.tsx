@@ -150,11 +150,11 @@ export function ChatWindow(props: {
         messages.length > 0 ? "border" : ""
       }`}
     >
-      <h2 className={`${messages.length > 0 ? "" : "hidden"} text-2xl`}>
+      {/* <h2 className={`${messages.length > 0 ? "" : "hidden"} text-2xl`}>
         <span className="text-sky-700">
           {emoji} {titleText}
         </span>
-      </h2>
+      </h2> */}
       {messages.length === 0 ? emptyStateComponent : ""}
       <div
         className="flex flex-col-reverse w-full mb-4 overflow-auto transition-[flex-grow] ease-in-out"
