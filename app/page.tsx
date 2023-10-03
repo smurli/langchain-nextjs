@@ -25,7 +25,14 @@ export default function Home() {
       <ul>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>23.288 (V18.3.0)</b> - Architecture
+            <b style={{ color: "#b5e7a0" }}>29.244 (18.3.0)</b> - Interface
+            between the Control Plane and the User Plane nodes
+          </span>
+        </li>
+
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>23.288 (18.3.0)</b> - Architecture
             enhancements for 5G System (5GS) to support network data analytics
             services
           </span>

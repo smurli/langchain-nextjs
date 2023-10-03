@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Public_Sans } from "next/font/google";
+import Script from "next/script";
 
 import { Navbar } from "@/components/Navbar";
 
@@ -13,6 +14,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-8WRBQ3MR61`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8WRBQ3MR61', {
+            page_path: window.location.pathname,
+          });
+        `,
+          }}
+        />
+
         <title>3GPP ChatGPT</title>
         <link rel="shortcut icon" href="/images/a5g-logo-4.png" />
         <meta
