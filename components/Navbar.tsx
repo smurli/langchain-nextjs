@@ -15,14 +15,9 @@ export function Navbar() {
           alt=""
           className="self-center w-8 h-8 rounded-full mx-1"
         />
-        <span>
-          <a
-            className={`mr-4 ${pathname === "/" ? "text-white border-b" : ""}`}
-            href="/"
-          >
-            A5G Networks
-          </a>
-        </span>
+        <a className="mt-1" href="/">
+          A5G Networks
+        </a>
       </span>
 
       {/* <a className={`mr-4 ${pathname === "/structured_output" ? "text-white border-b" : ""}`} href="/structured_output">🧱 Structured Output</a>

@@ -12,6 +12,9 @@ import { ChatMessageBubble } from "@/components/ChatMessageBubble";
 import { UploadDocumentsForm } from "@/components/UploadDocumentsForm";
 import { IntermediateStep } from "./IntermediateStep";
 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
 export function ChatWindow(props: {
   endpoint: string;
   emptyStateComponent: ReactElement;
@@ -64,7 +67,7 @@ export function ChatWindow(props: {
     api: endpoint,
     onError: (e) => {
       toast(e.message, {
-        theme: "dark",
+        theme: "light",
       });
     },
   });
@@ -148,7 +151,7 @@ export function ChatWindow(props: {
       }`}
     >
       <h2 className={`${messages.length > 0 ? "" : "hidden"} text-2xl`}>
-        <span style={{ color: "#68D4FA" }}>
+        <span className="text-sky-700">
           {emoji} {titleText}
         </span>
       </h2>
@@ -179,15 +182,15 @@ export function ChatWindow(props: {
       <form onSubmit={sendMessage} className="flex w-full flex-col">
         <div className="flex">{intemediateStepsToggle}</div>
         <div className="flex w-full mt-4">
-          <input
-            className="grow mr-8 p-4 rounded"
+          <Input
+            className="grow mr-8 p-4 rounded bg-sky-100 h-18 border-sky-200 "
             value={input}
-            placeholder={placeholder ?? "What's it like to be a pirate?"}
+            placeholder={placeholder ?? "Ask me anything..."}
             onChange={handleInputChange}
           />
-          <button
+          <Button
             type="submit"
-            className="shrink-0 px-8 py-4 bg-sky-500 rounded w-28"
+            className="shrink-0 px-8 py-4 bg-sky-700 text-white rounded w-28 h-18"
           >
             <div
               role="status"
@@ -224,7 +227,7 @@ export function ChatWindow(props: {
             >
               Send
             </span>
-          </button>
+          </Button>
         </div>
       </form>
       <ToastContainer />

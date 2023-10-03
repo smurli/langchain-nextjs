@@ -3,20 +3,17 @@ import Image from "next/image";
 
 export default function Home() {
   const InfoCard = (
-    <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-scroll">
+    <div className="p-4 md:p-8 rounded  w-full max-h-[85%] overflow-scroll">
       <h1 className="text-3xl md:text-4xl mb-4">
-        <span
-          className="inline-flex items-baseline"
-          style={{ color: "#68D4FA" }}
-        >
+        <span className="inline-flex items-baseline text-sky-700">
           <Image
-            src="/images/AI-Icon.jpeg"
+            src="/images/AI-Icon-2.jpeg"
             width={32}
             height={32}
             alt="Picture of the author"
-            className="mr-2"
+            className="mr-2 "
           />
-          3GPP ChatGPT
+          <p>3GPP ChatGPT</p>
         </span>
       </h1>
       <h2>
@@ -25,95 +22,95 @@ export default function Home() {
       <ul>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29.244 (18.3.0)</b> - Interface
-            between the Control Plane and the User Plane nodes
+            <b className="text-teal-600">29.244 (18.3.0)</b> - Interface between
+            the Control Plane and the User Plane nodes
           </span>
         </li>
 
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>23.288 (18.3.0)</b> - Architecture
+            <b className="text-teal-600">23.288 (18.3.0)</b> - Architecture
             enhancements for 5G System (5GS) to support network data analytics
             services
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>23.501 (18.3.0)</b> - System
+            <b className="text-teal-600">23.501 (18.3.0)</b> - System
             architecture for the 5G System (5GS)
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>23.791 (16.2.0)</b> - Study of
-            enablers for Network Automation for 5G
+            <b className="text-teal-600">23.791 (16.2.0)</b> - Study of enablers
+            for Network Automation for 5G
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>24.301 (18.4.0)</b> -
+            <b className="text-teal-600">24.301 (18.4.0)</b> -
             Non-Access-Stratum (NAS) protocol for Evolved Packet System (EPS);
             Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29.501 (18.3.0)</b> - 5G System;
+            <b className="text-teal-600">29.501 (18.3.0)</b> - 5G System;
             Principles and Guidelines for Services Definition; Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29.502 (18.4.0)</b> - 5G System;
+            <b className="text-teal-600">29.502 (18.4.0)</b> - 5G System;
             Session Management Services; Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29.503 (18.3.0)</b> - 5G System;
+            <b className="text-teal-600">29.503 (18.3.0)</b> - 5G System;
             Unified Data Management Services; Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29.504 (18.3.0)</b> - 5G System;
+            <b className="text-teal-600">29.504 (18.3.0)</b> - 5G System;
             Unified Data Repository Services; Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29.505 (18.3.0)</b> - 5G System;
-            Usage of the Unified Data Repository services for Subscription Data;
-            Stage 3
+            <b className="text-teal-600">29.505 (18.3.0)</b> - 5G System; Usage
+            of the Unified Data Repository services for Subscription Data; Stage
+            3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29.507 (18.3.0)</b> - 5G System;
-            Access and Mobility Policy Control Service; Stage 3
+            <b className="text-teal-600">29.507 (18.3.0)</b> - 5G System; Access
+            and Mobility Policy Control Service; Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29508 (18.3.0)</b> - 5G System;
-            Session Management Event Exposure Service; Stage 3
+            <b className="text-teal-600">29508 (18.3.0)</b> - 5G System; Session
+            Management Event Exposure Service; Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29509 (18.2.0)</b> - 5G System;
+            <b className="text-teal-600">29509 (18.2.0)</b> - 5G System;
             Authentication Server Services; Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29511 (18.1.0)</b> - 5G System;
+            <b className="text-teal-600">29511 (18.1.0)</b> - 5G System;
             Equipment Identity Register Services; Stage 3
           </span>
         </li>
         <li className="text-l">
           <span className="ml-2">
-            <b style={{ color: "#b5e7a0" }}>29512-i30 (18.3.0)</b> - 5G System;
+            <b className="text-teal-600">29512-i30 (18.3.0)</b> - 5G System;
             Session Management Policy Control Service; Stage 3
           </span>
         </li>
