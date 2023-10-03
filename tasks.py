@@ -45,7 +45,7 @@ def docker_push(c, tag="3gpp-chatgpt"):
     version = json.loads(json_version)["SemVer"]
     print(f"Tagging Docker image with anonmldev.azurecr.io/{tag}:{version}")
     c.run(
-        f"docker tag 3gpp-chatgpt anonmldev.azurecr.io/{tag}:{version}",
+        f"docker tag {tag}:{version} anonmldev.azurecr.io/{tag}:{version}",
         pty=True,
         echo=True,
     )
