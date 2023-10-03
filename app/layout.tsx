@@ -13,23 +13,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>LangChain + Next.js Template</title>
-        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <title>3GPP ChatGPT</title>
+        <link rel="shortcut icon" href="/images/a5g-logo-4.png" />
         <meta
           name="description"
-          content="Starter template showing how to use LangChain in Next.js projects. See source code and deploy your own at https://github.com/langchain-ai/langchain-nextjs-template!"
+          content="3GPP ChatGPT - Ask any questions on 5G core related 3GPP Specs!"
         />
-        <meta property="og:title" content="LangChain + Next.js Template" />
+        <meta property="og:title" content="3GPP ChatGPT" />
         <meta
           property="og:description"
-          content="Starter template showing how to use LangChain in Next.js projects. See source code and deploy your own at https://github.com/langchain-ai/langchain-nextjs-template!"
+          content="3GPP ChatGPT - Ask any questions on 5G core related 3GPP Specs"
         />
         <meta property="og:image" content="/images/og-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="LangChain + Next.js Template" />
+        <meta name="twitter:title" content="3GPP ChatGPT" />
         <meta
           name="twitter:description"
-          content="Starter template showing how to use LangChain in Next.js projects. See source code and deploy your own at https://github.com/langchain-ai/langchain-nextjs-template!"
+          content="3GPP ChatGPT - Ask any questions on 5G core related 3GPP Specs"
         />
         <meta name="twitter:image" content="/images/og-image.png" />
       </head>

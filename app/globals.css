@@ -29,5 +29,9 @@ code {
 }
 
 li {
-  padding: 4px;
+  padding: 0px;
+}
+
+ul {
+  list-style: square inside none;
 }

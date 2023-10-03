@@ -14,12 +14,15 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "^13.4.19",
+    "@pinecone-database/pinecone": "^1.1.0",
     "@supabase/supabase-js": "^2.32.0",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
     "ai": "^2.1.28",
     "autoprefixer": "10.4.14",
+    "dotenv": "^16.3.1",
+    "encoding": "^0.1.13",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "langchain": "^0.0.150",
@@ -32,8 +35,5 @@
     "typescript": "5.1.6",
     "zod": "^3.21.4",
     "zod-to-json-schema": "^3.21.4"
-  },
-  "devDependencies": {
-    "prettier": "3.0.0"
   }
 }

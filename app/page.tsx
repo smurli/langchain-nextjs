@@ -1,68 +1,113 @@
 import { ChatWindow } from "@/components/ChatWindow";
+import Image from "next/image";
 
 export default function Home() {
   const InfoCard = (
-    <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
+    <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-scroll">
       <h1 className="text-3xl md:text-4xl mb-4">
-        ▲ Next.js + LangChain.js 🦜🔗
+        <span
+          className="inline-flex items-baseline"
+          style={{ color: "#68D4FA" }}
+        >
+          <Image
+            src="/images/AI-Icon.jpeg"
+            width={32}
+            height={32}
+            alt="Picture of the author"
+            className="mr-2"
+          />
+          3GPP ChatGPT
+        </span>
       </h1>
+      <h2>
+        This instance of Chat GPT is indexed with the following 3GPP Specs:
+      </h2>
       <ul>
         <li className="text-l">
-          🤝
           <span className="ml-2">
-            This template showcases a simple chatbot using{" "}
-            <a href="https://js.langchain.com/" target="_blank">
-              LangChain.js
-            </a>{" "}
-            and the Vercel{" "}
-            <a href="https://sdk.vercel.ai/docs" target="_blank">
-              AI SDK
-            </a>{" "}
-            in a{" "}
-            <a href="https://nextjs.org/" target="_blank">
-              Next.js
-            </a>{" "}
-            project.
-          </span>
-        </li>
-        <li className="hidden text-l md:block">
-          💻
-          <span className="ml-2">
-            You can find the prompt and model logic for this use-case in{" "}
-            <code>app/api/chat/route.ts</code>.
-          </span>
-        </li>
-        <li>
-          🏴‍☠️
-          <span className="ml-2">
-            By default, the bot is pretending to be a pirate, but you can change
-            the prompt to whatever you want!
-          </span>
-        </li>
-        <li className="hidden text-l md:block">
-          🎨
-          <span className="ml-2">
-            The main frontend logic is found in <code>app/page.tsx</code>.
+            <b style={{ color: "#b5e7a0" }}>23.288 (V18.3.0)</b> - Architecture
+            enhancements for 5G System (5GS) to support network data analytics
+            services
           </span>
         </li>
         <li className="text-l">
-          🐙
           <span className="ml-2">
-            This template is open source - you can see the source code and
-            deploy your own version{" "}
-            <a
-              href="https://github.com/langchain-ai/langchain-nextjs-template"
-              target="_blank"
-            >
-              from the GitHub repo
-            </a>
-            !
+            <b style={{ color: "#b5e7a0" }}>23.501 (18.3.0)</b> - System
+            architecture for the 5G System (5GS)
           </span>
         </li>
         <li className="text-l">
-          👇
           <span className="ml-2">
-            Try asking e.g. <code>What is it like to be a pirate?</code> below!
+            <b style={{ color: "#b5e7a0" }}>23.791 (16.2.0)</b> - Study of
+            enablers for Network Automation for 5G
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>24.301 (18.4.0)</b> -
+            Non-Access-Stratum (NAS) protocol for Evolved Packet System (EPS);
+            Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29.501 (18.3.0)</b> - 5G System;
+            Principles and Guidelines for Services Definition; Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29.502 (18.4.0)</b> - 5G System;
+            Session Management Services; Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29.503 (18.3.0)</b> - 5G System;
+            Unified Data Management Services; Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29.504 (18.3.0)</b> - 5G System;
+            Unified Data Repository Services; Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29.505 (18.3.0)</b> - 5G System;
+            Usage of the Unified Data Repository services for Subscription Data;
+            Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29.507 (18.3.0)</b> - 5G System;
+            Access and Mobility Policy Control Service; Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29508 (18.3.0)</b> - 5G System;
+            Session Management Event Exposure Service; Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29509 (18.2.0)</b> - 5G System;
+            Authentication Server Services; Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29511 (18.1.0)</b> - 5G System;
+            Equipment Identity Register Services; Stage 3
+          </span>
+        </li>
+        <li className="text-l">
+          <span className="ml-2">
+            <b style={{ color: "#b5e7a0" }}>29512-i30 (18.3.0)</b> - 5G System;
+            Session Management Policy Control Service; Stage 3
           </span>
         </li>
       </ul>
@@ -71,9 +116,9 @@ export default function Home() {
   return (
     <ChatWindow
       endpoint="api/chat"
-      emoji="🏴‍☠️"
-      titleText="Patchy the Chatty Pirate"
-      placeholder="I'm an LLM pretending to be a pirate! Ask me about the pirate life!"
+      emoji="🤖"
+      titleText="3GPP ChatGPT"
+      placeholder="I'm an LLM indexed on 3GPP Specs. Ask me anything related to 3GPP specs!"
       emptyStateComponent={InfoCard}
     ></ChatWindow>
   );
