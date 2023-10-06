@@ -65,6 +65,7 @@ export function ChatWindow(props: {
     setMessages,
   } = useChat({
     api: endpoint,
+    id: "ai-chat-window",
     onError: (e) => {
       toast(e.message, {
         theme: "light",
@@ -146,6 +147,7 @@ export function ChatWindow(props: {
 
   return (
     <div
+      id="ai-chat-window"
       className={`flex flex-col items-center p-4 md:p-8 rounded grow overflow-hidden ${
         messages.length > 0 ? "border" : ""
       }`}

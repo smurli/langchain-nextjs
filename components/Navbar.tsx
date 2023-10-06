@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { VscFeedback } from "react-icons/vsc";
+import { Feedback } from "./Feedback";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -30,9 +31,7 @@ export function Navbar() {
         />
         <h1 className="text-sky-700">3GPP ChatGPT</h1>
       </span>
-      <a className="flex items-center" href="mailto:msivashanmugam@a5gnet.com">
-        <VscFeedback /> Feedback
-      </a>
+      <Feedback />
 
       {/* <a className={`mr-4 ${pathname === "/structured_output" ? "text-white border-b" : ""}`} href="/structured_output">🧱 Structured Output</a>
       <a className={`mr-4 ${pathname === "/agents" ? "text-white border-b" : ""}`} href="/agents">🦜 Agents</a>
