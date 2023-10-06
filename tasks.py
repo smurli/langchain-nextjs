@@ -31,6 +31,7 @@ def docker_run(c, tag="3gpp-chatgpt"):
         f'-e PINECONE_API_KEY={os.getenv("PINECONE_API_KEY")} '
         f'-e PINECONE_ENVIRONMENT={os.getenv("PINECONE_ENVIRONMENT")} '
         f'-e PINECONE_INDEX={os.getenv("PINECONE_INDEX")} '
+        f'-e TEAMS_WEB_HOOK={os.getenv("TEAMS_WEB_HOOK")} '
         f"{tag}:{version} ",
         pty=True,
         echo=True,

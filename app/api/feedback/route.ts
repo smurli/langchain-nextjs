@@ -2,7 +2,6 @@ import { NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  console.log(body);
   const card = {
     "@type": "MessageCard",
     "@context": "http://schema.org/extensions",
@@ -42,6 +41,6 @@ export async function POST(req: NextRequest) {
   }).catch((err) => {
     console.log(err);
   });
-  console.log("Teams Res:", res);
+  //   console.log("Teams Res:", res);
   return new Response("ok", { status: 200 });
 }
