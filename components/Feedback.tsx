@@ -63,9 +63,9 @@ export function Feedback() {
             <Textarea ref={inputRef} placeholder="Type your message here." />
             <RadioGroup
               defaultValue="t-up"
-              className="flex justify-evenly mt-2"
+              className="flex justify-items-start mt-2"
             >
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 mr-4">
                 <RadioGroupItem value="t-down" id="tdown" />
                 <Label htmlFor="tdown">
                   <FaThumbsDown />
@@ -78,6 +78,12 @@ export function Feedback() {
                 </Label>
               </div>
             </RadioGroup>{" "}
+            <p className="flex pt-2">
+              <b>
+                Note: Content of current chat window will be attched with this
+                message.
+              </b>
+            </p>
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
